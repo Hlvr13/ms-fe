@@ -1,0 +1,187 @@
+#section1{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+
+
+.slideshow,
+.slideshow::after{
+   list-style: none;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   z-index: 0; 
+   content: '';
+}
+
+.slideshow li span{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   color: transparent;
+   background-size: cover;
+   background-position: 50% 50%;
+   background-repeat: none;
+   opacity: 0;
+   z-index: 0;
+   animation: imageAnimation 36s linear infinite 0s; 
+}
+
+.slideshow li:nth-child(1) span{
+    background-image: url('../../img/Drums.jpg');
+}
+.slideshow li:nth-child(2) span{
+   background-image: url('../../img/acoustic-audio-black-and-white-1327438.jpg');
+   animation-delay: 6s;
+}
+.slideshow li:nth-child(3) span{
+  background-image: url('../../img/Electric-Guitar.jpg');
+  animation-delay: 12;
+}
+.slideshow li:nth-child(4) span{
+ background-image: url('../../img/Saxophone.jpg');
+ animation-delay: 18s;
+}
+.slideshow li:nth-child(5) span{
+  background-image: url('../../img/Violin.jpg');
+  animation-delay: 24s;
+ }
+ .slideshow li:nth-child(6) span{
+  background-image: url('../../img/Bass-Guitar.jpg');
+  animation-delay: 30s;
+ }
+
+@keyframes imageAnimation { 
+   0% { opacity: 0;}
+   8.33% { opacity: 1; animation-timing-function: ease-in}
+   16.66% { opacity: 1; animation-timing-function: ease-out}
+   33% { opacity: 0;}
+   100% { opacity: 0;}
+}
+
+
+#login {
+   width:100%;
+   height:100vh;
+   max-height:100vh;
+   background:green;
+ }
+ 
+ #register-content {
+   background:blue;
+   height:350px;
+   width:1000px;
+   margin:150px auto;
+   background-color:rgba(46, 46, 48, 0.589);
+ }
+ 
+ #signup-format {
+   width:260px;
+   margin-left:30px;
+   padding-top:65px;
+   font-size:30px;
+   font-family:sans-serif;
+   display: flex;
+   flex-direction: column;
+   -ms-flex-item-align: start;
+   text-align: start;
+   color: white;
+ }
+ 
+ #signup-format p {
+   width:350px;
+   font-size:16px;
+   font-family:sans-serif;
+ }
+ 
+ #signup-format button {
+   width:150px;
+   border-radius:6px;
+   font-size:16px;
+   font-family:sans-serif;
+ }
+ 
+ #offset {
+   margin:-650px 0px;
+   width:100%;
+   height:1px;
+ }
+ 
+ #signin-content {
+   width:530px;
+   height:450px;
+   margin:100px 280px auto auto;
+   background-color:#ffffff;
+ }
+ 
+ #signin-format {
+   width:100%;
+   margin-left:30px;
+   padding-top:65px;
+   font-size:26px;
+   font-family:sans-serif;
+   display: flex;
+   flex-direction: column;
+   -ms-flex-item-align: start;
+   text-align: start;
+   font-family: 'Roboto';
+
+ }
+ 
+ #signin-format button {
+   width:150px;
+   height:40px;
+   border-radius:6px;
+   font-size:16px;
+   margin-left:155px;
+ }
+ 
+ #signin-format a {
+   font-size:16px;
+ }
+ 
+ #input-format {
+   margin-top:50px;
+   margin-bottom:20px;
+ }
+ 
+ #input-format input {
+   width:85%;
+   margin-bottom:25px;
+   border:none;
+   border-bottom:1px solid gray;
+   font-family:sans-serif;
+   font-size:20px;
+   color: black;
+   background: white;
+ }
+
+ #input-format input:focus::placeholder {
+   color: transparent;
+}
+
+ #input-format input::placeholder {
+  color: gray;
+  font-weight: 400;
+}
+
+ #input-format input:focus {
+   outline: none;
+}
+ 
+ .password-icon {
+   font-size:20px;
+   color:gray;
+   margin-left:-24px;
+ }
+ 
+ .email-icon {
+   font-size:20px;
+   color:gray;
+   margin-left:-23px;
+ }

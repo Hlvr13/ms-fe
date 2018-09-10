@@ -1,0 +1,26 @@
+.user-page {
+    margin: 10px auto 0;
+}
+
+.user-video-audition iframe {
+    width: 100%;
+    /*height: auto;*/
+}
+
+.user-photo img {
+    width: 100%;
+    height: auto;
+}
+
+
+table {
+    margin: 15px auto;
+}
+
+table td:first-child {
+    text-align: right;
+}
+
+table td:nth-child(2) {
+    text-align: left;
+}

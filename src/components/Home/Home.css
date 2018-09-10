@@ -1,0 +1,25 @@
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: #213540;
+
+}
+
+#text-format{
+    color: rgb(148,166,184);
+    text-align: center;
+}
+
+#text-format h1{
+    font-family: 'Roboto';
+    font-size: 54px;
+    font-weight: bold
+}
+
+#text-format h3{
+    font-family: 'Roboto';
+    font-size: 26px;
+}
+
+
+ 

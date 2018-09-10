@@ -1,0 +1,117 @@
+#sc-register {
+    width:100%;
+    height:100vh;
+    display:grid;
+    grid-template-columns:.5fr 1fr 1fr .5fr;
+    grid-template-rows:.3fr 1fr 1fr .3fr;
+    grid-template-areas:"na  na   na  btn" 
+                        "na1 img form na2"
+                        "na1 img form na2" 
+                        "na3 na3  na3 na3";
+  }
+  
+  #img {
+    grid-area:img;
+    width:100%!important;
+    background:url(../../img/instruments.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  
+  #form {
+    grid-area:form;
+    width:100%!important;
+    background:white;
+    max-width:100%;
+    box-shadow:0px 0px 11px 1px gray;
+  }
+
+  
+  #logo {
+    background-image: url(../../img/Music_soul_Logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:70px!important;
+    height:70px!important;
+    border-radius:100%;
+    margin-bottom:2%;
+  }
+
+  #form2{
+    width: 100%;
+    padding: 0px 12%;
+  }
+  
+  #form-info {
+    margin-top:1%;
+    margin-bottom:1%;
+  }
+
+
+
+  #register-title{
+    font-family: 'Roboto';
+  }
+  
+  #form-info input {
+    width: 100%;
+    font-family: 'Roboto';
+    border:none;
+    border-bottom:1px solid gray;
+    margin-bottom:5%;
+    font-size:20px;
+    font-weight: 500;
+    color: black;
+  }
+
+  #form-info input:focus::placeholder {
+    color: transparent;
+  }
+
+  #form-info input::placeholder {
+    color: gray;
+    font-weight: 400;
+  }
+
+  #form-info input:focus {
+    outline: none;
+  }
+  
+  #btn-register {
+    width:150px;
+    height:40px;
+    border-radius:6px;
+    font-size:16px;
+    text-transform:uppercase;
+  }
+  
+  #register-title {
+    font-size:2rem;
+  }
+  
+  #r-info-bottom div h3 {
+    text-align:center;
+  }
+  
+  #r-info-top {
+    padding-bottom:10%;
+  }
+
+  #signIn-btn{
+    grid-area: btn;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #signIn-btn button{
+    width:100px;
+    height:40px;
+    border: none;
+    border-radius:6px;
+    font-size:16px;
+    text-transform:uppercase;
+  }
