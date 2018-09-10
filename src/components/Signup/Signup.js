@@ -154,12 +154,12 @@ class Signup extends Component {
                         <img id = "logo"/>
                         <p id="register-title">Welcom to Music Soul</p>
                         <div className ="d-flex flex-column" id="form-info">
-                            <input type="text" placeholder="First Name" name = "firstName" value = {this.state.firstName} onChange={this.onInputCheck}/>
-                            <input type="text" placeholder="Last Name" name = "lastName" value = {this.state.lastName} onChange={this.onInputCheck}/>
-                            <input type="email" placeholder="Email" name = "email" value = {this.state.email} onChange={this.onInputCheck}/>
-                            <input type="text" placeholder="Phone" name = "phone" value = {this.state.phone} onChange={this.onInputCheck}/>
-                            <input type="password" placeholder="Password" name = "password" value = {this.state.password} onChange={this.onInputCheck}/>
-                            <input type="password" placeholder="Confirm Password" name = "check_password" value = {this.state.check_password} onChange={this.onInputCheck}/>
+                            <input type="text" placeholder="First Name" name = "firstName" value = {this.state.firstName} onChange={this.onInputCheck} required/>
+                            <input type="text" placeholder="Last Name" name = "lastName" value = {this.state.lastName} onChange={this.onInputCheck} required/>
+                            <input type="email" placeholder="Email" name = "email" value = {this.state.email} onChange={this.onInputCheck} required/>
+                            <input type="text" placeholder="Phone" name = "phone" value = {this.state.phone} onChange={this.onInputCheck} required/>
+                            <input type="password" placeholder="Password" name = "password" value = {this.state.password} onChange={this.onInputCheck} required/>
+                            <input type="password" placeholder="Confirm Password" name = "check_password" value = {this.state.check_password} onChange={this.onInputCheck} required/>
                         </div>
                         <input type="submit" value = "Register" className ="btn btn-primary" id="btn-register"/>      
                     </form>          
